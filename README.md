@@ -5,7 +5,7 @@ A Movie Recommender Systems Based on Tf-idf and Popularity.
 We developed this content-based movie recommender based on two attributes, overview and popularity. Firstly, we calculate similarities between any two movies by their overview tf-idf vectors. Script *rec.py* stops here. This is a basic recommender only evaluated by overview. Factors, like rating, actors, publish year and popularity, etc. can also contribute to the recmmended result. Script *rec_pop.py* add one more feature, popularity, as input to adjust final results. The weighted similarity score consist of 80% tf-idf vector and 20% popularity.
 
 ## Scripts in detail
-- rec.html
+- rec.html 
 The script is a basic user interface for input.
 ```html
 <h1>Please Enter Movie Title to Get Recommendation</h1>
