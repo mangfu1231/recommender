@@ -14,7 +14,7 @@ The script is a basic user interface for input.
   <button type="submit" name="search"><i class="fa fa-search"></i></button>
 </form>
 ```
-- rec.php
+- rec.php  
 The php script gets user input, forwards the user input variable to the python recommender script and calls the recommender script to run. Once the the recommender script finishing running, it output the final result to user by browser.
 ```php
 <?php 
@@ -28,7 +28,7 @@ $output = shell_exec($command);
 <h2> <?php echo $output ?> </h2>
 ```
 
-- rec.py
+- rec.py  
 This is the main script for recommender system. We connected MySQL databse, read dataset into pandas dataframe, build a tf-idf matrix for overview, compute the cosine similarity matrix and get recommendations by the cosine similarity matrix.
 ```python
 import sys
@@ -82,7 +82,7 @@ movie9 = movieRec.iloc[8]
 movie10 = movieRec.iloc[9]
 print ('You may also like: 1. '+ movie1 + ' 2. ' + movie2 + ' 3. ' + movie3 + ' 4. ' + movie4 + ' 5. ' + movie5 + ' 6. ' + movie6 + ' 7. ' + movie7 + ' 8. ' + movie8 + ' 9. ' + movie9 + ' 10. ' + movie10)
 ```
-- rec_pop.py
+- rec_pop.py  
 The *rec_pop.py* is independent from *rec.py*. Everything keeps the same until the *get_recommendations* function. We replaced *get_recommendations* to *get_tfidf* since we will not get results only by overview vector.
 ```python
 def get_tfidf(title, cosine_sim=cosine_sim):
