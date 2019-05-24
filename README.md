@@ -141,4 +141,4 @@ movie10 = movieRec.iloc[9]
 print ('You may also like: 1. '+ movie1 + ' 2. ' + movie2 + ' 3. ' + movie3 + ' 4. ' + movie4 + ' 5. ' + movie5 + ' 6. ' + movie6 + ' 7. ' + movie7 + ' 8. ' + movie8 + ' 9. ' + movie9 + ' 10. ' + movie10)
 ```
 ## Methodology on blog
-https://chaoweiwang6.wixsite.com/website/blog/brainstorm-how-to-the-wall-of-ideas
+https://cwang.netlify.com/post/movie_recommendation_engine/
